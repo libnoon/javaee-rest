@@ -1,4 +1,4 @@
-# JavaEE REST boilerplate
+# JavaEE REST boilerplate (work in progress)
 
 To build:
 
