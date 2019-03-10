@@ -16,4 +16,4 @@ Deploy:
 $ mvn wildfly:deploy
 ```
 
-Enjoy: http://127.0.0.1:8080/boil/resources/helloworld
+Enjoy: http://127.0.0.1:8080/boil/resources/helloworld/add/3?number=4

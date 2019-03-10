@@ -8,6 +8,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 
 /**
  * Root resource (exposed at "helloworld" path)
@@ -28,7 +30,8 @@ public class HelloWorld {
      * @return an instance of java.lang.String
      */
     @GET
-    public String httpGet() {
-        return "{\"two\": 2, \"four\": 4}";
+    @Path("add/{number}")
+    public int httpGet(@PathParam("number") String num1, @QueryParam("number") String num2) {
+        return Integer.valueOf(num1) + Integer.valueOf(num2);
     }
 }
