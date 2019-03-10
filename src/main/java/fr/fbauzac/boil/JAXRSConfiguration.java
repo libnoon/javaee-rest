@@ -4,7 +4,7 @@ package fr.fbauzac.boil;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.ApplicationPath;
 
-@ApplicationPath("resources")
+@ApplicationPath("applicationpath")
 public class JAXRSConfiguration extends Application {
-    
+
 }
